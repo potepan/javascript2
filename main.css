@@ -1,0 +1,25 @@
+.container{
+    width: 400px;
+    margin: 50px auto;
+}
+
+.display{
+    background-color: black;
+    color: white;
+    height: 40px;
+    font-size: 24px;
+    line-height: 39px;
+    padding-right: 40px;
+    text-align: right;
+}
+.buttons button{
+    height: 40px;
+    width: 100px;
+    margin: 0px;
+    display: block;
+    float: left;
+    border: none;
+}
+.buttons>button:nth-child(17),.buttons>button:nth-child(18){
+    width: 200px;
+}

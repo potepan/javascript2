@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="main.css">
+<title>電卓</title>
+</head>
+
+<body>
+<div class="container">
+<div class="display" id="display">0</div>
+
+<div class ="buttons" id="buttons">
+    <button onclick="displayFunc(7);">7</button>
+    <button onclick="displayFunc(8);">8</button>
+    <button onclick="displayFunc(9);">9</button>
+    <button onclick="displayFunc('+');">+</button>
+    <button onclick="displayFunc(4);">4</button>
+    <button onclick="displayFunc(5);">5</button>
+    <button onclick="displayFunc(6);">6</button>
+    <button onclick="displayFunc('-');">-</button>
+    <button onclick="displayFunc(1);">1</button>
+    <button onclick="displayFunc(2);">2</button>
+    <button onclick="displayFunc(3);">3</button>
+    <button onclick="displayFunc('×');">×</button>
+    <button onclick="displayFunc(0);">0</button>
+    <button onclick="(function(){
+        value = String(0).padStart(2, '0');
+        displayFunc(value);
+     })();">00</button>
+    <button onclick="displayFunc('.');">.</button>
+    <button onclick="displayFunc('/');">/</button>
+    <button onclick="clearDisplay();">AC</button>
+    <button onclick="resultDisplay();">=</button>
+</div>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
